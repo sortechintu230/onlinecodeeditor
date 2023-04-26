@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1631c94342.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="right-box">
+            <label for="html"><i class="fa-brands fa-html5"></i>  HTML</label>
+            <textarea name="html" id="html-code" onkeyup="run()"></textarea>
+
+            <label for="css"><i class="fa-brands fa-css3-alt"></i>  CSS</label>
+            <textarea name="css" id="css-code" onkeyup="run()"></textarea>
+
+            <label for="js"><i class="fa-brands fa-square-js"></i>  JAVASCRIPT</label>
+            <textarea name="js" id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="left-box">
+            <label for="output"><i class="fa-solid fa-play"></i>  OUTPUT</label>
+            <iframe id="output" name="output"></iframe>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
